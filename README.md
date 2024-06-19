@@ -1,7 +1,8 @@
 # abhishekproject
 Flask MySQL User Management
-This project is a simple Flask application that demonstrates how to create a user management system with a MySQL database. The application allows you to:
+This project is a simple Flask application that demonstrates how to create a user management system with a MySQL database. 
 
+The application allows you to:
 List all users
 Add new users
 View details of a specific user
@@ -9,9 +10,11 @@ Features
 /users: Displays a list of all users in an HTML table.
 /new_user: Provides a form to add a new user.
 /users/: Displays details of a specific user.
+
 Prerequisites
-Python 3.x
-MySQL Server
+1. Python 3.x
+2. MySQL Server
+
 Installation
 Clone the repository:
 git clone https://github.com/yourusername/flask-mysql-user-management.git
@@ -23,14 +26,12 @@ python -m venv venv
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 Install the required packages:
 sh
-
 pip install -r requirements.txt
+
 Set up your MySQL database and create a table for users:
 sql
-
 CREATE DATABASE your_database_name;
 USE your_database_name;
-
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100) NOT NULL,
@@ -50,6 +51,7 @@ def get_db_connection():
 Usage
 Run the Flask application:
 sh
+
 python app.py
 Open your web browser and navigate to http://127.0.0.1:5000/users to see the list of users.
 
@@ -62,17 +64,17 @@ File Structure
 sql
 
 flask-mysql-user-management/
-│
-├── templates/
-│   ├── new_user.html
-│   ├── user_detail.html
-│   └── users.html
-│
-├── app.py
-└── README.md
+
+templates/
+        new_user.html
+        user_detail.html
+        users.html
+
+   app.py
+   README.md
 Dependencies
-Flask
-mysql-connector-python
+      Flask
+      mysql-connector-python
 These are listed in the requirements.txt file. Install them using pip install -r requirements.txt.
 
 Contributing
@@ -81,7 +83,6 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-css
 
 
 ### `requirements.txt`
